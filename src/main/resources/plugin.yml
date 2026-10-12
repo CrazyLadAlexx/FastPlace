@@ -1,0 +1,30 @@
+name: Fastplace
+version: '1.0'
+main: me.alex.fastplace.Fastplace
+api-version: '1.21'
+author: CrazyLadAlex
+description: Fastplace blocks in the direction you placed the original block
+commands:
+  fastplace:
+    description: Enable fastplace with a distance, or disable it without arguments.
+    aliases: [fp]
+    usage: /fp 18 - /fastplace 18
+permissions:
+  fastplace.16:
+    description: Use fastplace distances from 1 to 16.
+    default: op
+  fastplace.32:
+    description: Use fastplace distances from 1 to 32.
+    default: op
+    children:
+      fastplace.16: true
+  fastplace.64:
+    description: Use fastplace distances from 1 to 64.
+    default: op
+    children:
+      fastplace.32: true
+  fastplace.128:
+    description: Use fastplace distances from 1 to 128.
+    default: op
+    children:
+      fastplace.64: true

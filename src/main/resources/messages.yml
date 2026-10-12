@@ -1,0 +1,6 @@
+prefix: '&6&lFastplace &8» '
+enabled: '{prefix}&fEnabled fastplace with &6{amount} &fdistance!'
+disabled: '{prefix}&cFastplace Disabled'
+locked: '&c&l(!) &cYou have not unlocked fastplace!'
+usage: '&c&l(!) &cUsage: /fp 18 - /fastplace 18'
+exhausted: '{prefix}&cYou have run out of blocks!'
